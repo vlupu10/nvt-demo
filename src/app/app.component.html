@@ -1,0 +1,92 @@
+
+<h1>CLOCKS</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="dial">
+        <svg width="230" height="230" >
+          <circle class="dial-bk" cx="113" cy="113" r="56"/>
+        </svg>
+        <div class="hours-wrapper">
+          <div #hoursEl class="hours">
+            <div class="hand"></div>
+          </div>
+        </div>
+        <div class="minutes-wrapper">
+          <div #minutesEl class="minutes">
+            <div class="hand"></div>
+          </div>
+        </div>
+        <div class="seconds-wrapper">
+          <div #secondsEl class="seconds">
+            <div class="hand"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="digital-container">
+        <div class="plus">
+          <button class="hours-btn" mat-button (click)="increaseHours()">+</button>
+          <button class="minutes-btn" mat-button (click)="increaseMinutes()">+</button>
+        </div>
+        <div class="digital">
+          <span class="red">{{hoursStr}}</span>
+          <span class="white">:</span>
+          <span class="red">{{minutesStr}}</span>
+          <span class="white">:</span>
+          <span class="red">{{seconds}}</span>
+        </div>
+        <button mat-button (click)="reset()">Reset</button>
+        <div class="minus">
+          <button class="hours-btn" (click)="decreaseHours()">-</button>
+          <button class="minutes-btn" (click)="decreaseMinutes()">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <table>
+  <tr>
+    <td>
+      <div class="dial">
+        <svg width="230" height="230" >
+          <circle class="dial-bk" cx="113" cy="113" r="56"/>
+        </svg>
+        <div class="hours-wrapper">
+          <div #hoursEl class="hours">
+            <div class="hand"></div>
+          </div>
+        </div>
+        <div class="minutes-wrapper">
+          <div #minutesEl class="minutes">
+            <div class="hand"></div>
+          </div>
+        </div>
+        <div class="seconds-wrapper">
+          <div #secondsEl class="seconds">
+            <div class="hand"></div>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="plus">
+        <button class="hours-btn" mat-button (click)="increaseHours()">+</button>
+        <button class="minutes-btn" mat-button (click)="increaseMinutes()">+</button>
+      </div>
+      <div class="digital">
+        <span class="red">{{hoursStr}}</span>
+        <span class="white">:</span>
+        <span class="red">{{minutesStr}}</span>
+        <span class="white">:</span>
+        <span class="red">{{seconds}}</span>
+      </div>
+      <button mat-button (click)="reset()">Reset</button>
+      <div class="minus">
+        <button class="hours-btn" (click)="decreaseHours()">-</button>
+        <button class="minutes-btn" (click)="decreaseMinutes()">-</button>
+      </div>
+    </td>
+  </tr>
+</table> -->

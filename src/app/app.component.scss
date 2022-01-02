@@ -1,0 +1,114 @@
+h1 {
+  text-align: center;
+}
+table {
+  margin: auto;
+}
+.dial-bk {
+  fill:#000;
+}
+.title {
+  transform: translateX(50%);
+}
+.digital {
+  background-color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 34px;
+  font-weight: 600;
+  padding: 0px 6px 0px 6px;
+  display: inline-block;
+}
+.red {
+  color: rgb(211, 0, 0);
+}
+.white {
+  color: #fff;
+}
+.dial {
+  position: relative;
+  transform: translateX(calc(50% - 115px));
+}
+div .digital-container {
+  position: relative
+}
+.digital-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(calc(50% - 113px), calc(50% - 95px));
+}
+.hours-wrapper {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 116px;
+  left: 0px;
+  .hours {
+    position: relative;
+    .hand {
+      position: absolute;
+      width: 5px;
+      height: 40px;
+      background-color: rgb(66, 66, 66);
+      border-radius: 5px;
+      border: 2px rgb(182, 182, 182) solid;
+      left: 111px;
+      top: -5px;
+    }
+  }
+}
+.minutes-wrapper {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 116px;
+  left: 0px;
+  .minutes {
+    position: relative;
+    .hand {
+      position: absolute;
+      width: 3px;
+      height: 44px;
+      background-color: rgb(66, 66, 66);
+      border-radius: 2px;
+      border: 2px rgb(182, 182, 182) solid;
+      left: 112px;
+      top: -3px;
+    }
+  }
+}
+.seconds-wrapper {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 116px;
+  left: 0px;
+  .seconds {
+    position: relative;
+    .hand {
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: rgb(240, 0, 0);
+      left: 114px;
+      top: -1px;
+    }
+  }
+}
+.hours-btn {
+  margin-left: 17px;
+  height: 23px;
+  width: 24px;
+  line-height: 16px;
+}
+.minutes-btn {
+  margin-left: 36px;
+  height: 23px;
+  width: 24px;
+  line-height: 16px;
+}
+.plus {
+  height: 23px;
+}
+.minus {
+  height: 26px;
+}
